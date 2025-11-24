@@ -13,6 +13,7 @@ will need to build the RPM package yourself.
 
 ```
 $ sudo dnf -y groupinstall 'RPM Development Tools'
+$ sudo dnf builddep -y opencl-amd.spec
 $ ./build.sh
 ```
 
