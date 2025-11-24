@@ -26,6 +26,7 @@ Usage
 Do whatever you want
 
 ```
+$ rocminfo
 $ clinfo
 $ clpeak
 $ blender
