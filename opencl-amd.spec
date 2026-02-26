@@ -120,7 +120,7 @@ echo 'export PATH="${PATH}:/opt/rocm/bin:/opt/rocm/hip/bin"' > %{buildroot}%{_sy
 /opt/rocm/share/
 
 %changelog
-* Thu Feb 23 2026 ApicalShark - 7.2.0-1
+* Thu Feb 26 2026 ApicalShark - 7.2.0-1
 - Update to 7.2.0
 
 * Sun Nov 23 2025 ApicalShark - 7.1.0-1
