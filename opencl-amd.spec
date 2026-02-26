@@ -6,7 +6,7 @@
 # The AMD EULA may forbid redistribution of the resulting binary RPM files.
 # Build and use this package for personal use only.
 %global __requires_exclude ^(libncursesw\\.so\\.6\\(NCURSESW6_.*\\)\\(64bit\\)|libtinfo\\.so\\.6\\(NCURSES6_TINFO.*\\)\\(64bit\\))$
-%global rocm_version 7.1.0
+%global rocm_version 7.2.0
 %global rocm_release 1
 
 # RPM flags
@@ -23,25 +23,25 @@ URL:            https://rocm.docs.amd.com/en/latest/
 ExclusiveArch:  x86_64
 
 # Source .deb files from the official AMD ROCm repository
-Source0:        https://repo.radeon.com/rocm/apt/7.1/pool/main/a/amd-smi-lib/amd-smi-lib_26.1.0.70100-20~24.04_amd64.deb
-Source1:        https://repo.radeon.com/rocm/apt/7.1/pool/main/c/comgr/comgr_3.0.0.70100-20~24.04_amd64.deb
-Source2:        https://repo.radeon.com/rocm/apt/7.1/pool/main/h/hsa-amd-aqlprofile/hsa-amd-aqlprofile_1.0.0.70100-20~24.04_amd64.deb
-Source3:        https://repo.radeon.com/rocm/apt/7.1/pool/main/h/hsa-rocr/hsa-rocr_1.18.0.70100-20~24.04_amd64.deb
-Source4:        https://repo.radeon.com/rocm/apt/7.1/pool/main/h/hsa-rocr-dev/hsa-rocr-dev_1.18.0.70100-20~24.04_amd64.deb
-Source5:        https://repo.radeon.com/rocm/apt/7.1/pool/main/h/hip-runtime-amd/hip-runtime-amd_7.1.25424.70100-20~24.04_amd64.deb
-Source6:        https://repo.radeon.com/rocm/apt/7.1/pool/main/r/rocm-core/rocm-core_7.1.0.70100-20~24.04_amd64.deb
-Source7:        https://repo.radeon.com/rocm/apt/7.1/pool/main/r/rocminfo/rocminfo_1.0.0.70100-20~24.04_amd64.deb
-Source8:        https://repo.radeon.com/rocm/apt/7.1/pool/main/r/rocm-opencl/rocm-opencl_2.0.0.70100-20~24.04_amd64.deb
-Source9:        https://repo.radeon.com/rocm/apt/7.1/pool/main/r/rocm-opencl-dev/rocm-opencl-dev_2.0.0.70100-20~24.04_amd64.deb
-Source10:       https://repo.radeon.com/rocm/apt/7.1/pool/main/r/rocm-smi-lib/rocm-smi-lib_7.8.0.70100-20~24.04_amd64.deb
-Source11:       https://repo.radeon.com/rocm/apt/7.1/pool/main/r/rocm-device-libs/rocm-device-libs_1.0.0.70100-20~24.04_amd64.deb
-Source12:       https://repo.radeon.com/rocm/apt/7.1/pool/main/r/rocprofiler/rocprofiler_2.0.70100.70100-20~24.04_amd64.deb
-Source13:       https://repo.radeon.com/rocm/apt/7.1/pool/main/r/rocprofiler-dev/rocprofiler-dev_2.0.70100.70100-20~24.04_amd64.deb
-Source14:       https://repo.radeon.com/rocm/apt/7.1/pool/main/r/rocprofiler-plugins/rocprofiler-plugins_2.0.70100.70100-20~24.04_amd64.deb
-Source15:       https://repo.radeon.com/rocm/apt/7.1/pool/main/r/rocprofiler-register/rocprofiler-register_0.6.0.70100-20~24.04_amd64.deb
-Source16:       https://repo.radeon.com/rocm/apt/7.1/pool/main/r/rocm-dbgapi/rocm-dbgapi_0.77.4.70100-20~24.04_amd64.deb
-Source17:       https://repo.radeon.com/rocm/apt/7.1/pool/main/r/rocm-debug-agent/rocm-debug-agent_2.1.0.70100-20~24.04_amd64.deb
-Source18:       https://repo.radeon.com/rocm/apt/7.1/pool/main/r/rocm-gdb/rocm-gdb_16.3.70100-20~24.04_amd64.deb
+Source0:        https://repo.radeon.com/rocm/apt/7.2/pool/main/a/amd-smi-lib/amd-smi-lib_26.2.1.70200-43~24.04_amd64.deb
+Source1:        https://repo.radeon.com/rocm/apt/7.2/pool/main/c/comgr/comgr_3.0.0.70200-43~24.04_amd64.deb
+Source2:        https://repo.radeon.com/rocm/apt/7.2/pool/main/h/hsa-amd-aqlprofile/hsa-amd-aqlprofile_1.0.0.70200-43~24.04_amd64.deb
+Source3:        https://repo.radeon.com/rocm/apt/7.2/pool/main/h/hsa-rocr/hsa-rocr_1.18.0.70200-43~24.04_amd64.deb
+Source4:        https://repo.radeon.com/rocm/apt/7.2/pool/main/h/hsa-rocr-dev/hsa-rocr-dev_1.18.0.70200-43~24.04_amd64.deb
+Source5:        https://repo.radeon.com/rocm/apt/7.2/pool/main/h/hip-runtime-amd/hip-runtime-amd_7.2.26015.70200-43~24.04_amd64.deb
+Source6:        https://repo.radeon.com/rocm/apt/7.2/pool/main/r/rocm-core/rocm-core_7.2.0.70200-43~24.04_amd64.deb
+Source7:        https://repo.radeon.com/rocm/apt/7.2/pool/main/r/rocminfo/rocminfo_1.0.0.70200-43~24.04_amd64.deb
+Source8:        https://repo.radeon.com/rocm/apt/7.2/pool/main/r/rocm-opencl/rocm-opencl_2.0.0.70200-43~24.04_amd64.deb
+Source9:        https://repo.radeon.com/rocm/apt/7.2/pool/main/r/rocm-opencl-dev/rocm-opencl-dev_2.0.0.70200-43~24.04_amd64.deb
+Source10:       https://repo.radeon.com/rocm/apt/7.2/pool/main/r/rocm-smi-lib/rocm-smi-lib_7.8.0.70200-43~24.04_amd64.deb
+Source11:       https://repo.radeon.com/rocm/apt/7.2/pool/main/r/rocm-device-libs/rocm-device-libs_1.0.0.70200-43~24.04_amd64.deb
+Source12:       https://repo.radeon.com/rocm/apt/7.2/pool/main/r/rocprofiler/rocprofiler_2.0.70200.70200-43~24.04_amd64.deb
+Source13:       https://repo.radeon.com/rocm/apt/7.2/pool/main/r/rocprofiler-dev/rocprofiler-dev_2.0.70200.70200-43~24.04_amd64.deb
+Source14:       https://repo.radeon.com/rocm/apt/7.2/pool/main/r/rocprofiler-plugins/rocprofiler-plugins_2.0.70200.70200-43~24.04_amd64.deb
+Source15:       https://repo.radeon.com/rocm/apt/7.2/pool/main/r/rocprofiler-register/rocprofiler-register_0.6.0.70200-43~24.04_amd64.deb
+Source16:       https://repo.radeon.com/rocm/apt/7.2/pool/main/r/rocm-dbgapi/rocm-dbgapi_0.77.4.70200-43~24.04_amd64.deb
+Source17:       https://repo.radeon.com/rocm/apt/7.2/pool/main/r/rocm-debug-agent/rocm-debug-agent_2.1.0.70200-43~24.04_amd64.deb
+Source18:       https://repo.radeon.com/rocm/apt/7.2/pool/main/r/rocm-gdb/rocm-gdb_16.3.70200-43~24.04_amd64.deb
 
 BuildRequires:  binutils
 BuildRequires:  patchelf
@@ -120,7 +120,10 @@ echo 'export PATH="${PATH}:/opt/rocm/bin:/opt/rocm/hip/bin"' > %{buildroot}%{_sy
 /opt/rocm/share/
 
 %changelog
-* Sun Nov 23 2025 apicalshark - 7.1.0-1
+* Thu Feb 23 2026 ApicalShark - 7.2.0-1
+- Update to 7.2.0
+
+* Sun Nov 23 2025 ApicalShark - 7.1.0-1
 - Updated spec to match opencl-amd AUR package version 7.1.0 with the power of vibe coding
 - Switched from single amdgpu-pro tarball to multiple ROCm .deb packages
 - Replaced amdgporun script with system-wide ld.so.conf and profile.d files
